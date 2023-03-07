@@ -7,6 +7,11 @@ app.get('/', (req, res) => {
   res.sendStatus('500')
 })
 
+app.get('/others', (req, res) => {
+    res.send('Hello World from Others Page!')
+    res.sendStatus('200')
+  })
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
